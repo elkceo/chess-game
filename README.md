@@ -2,6 +2,8 @@
 
 This is a web-based chess game developed with Java Spring and Thymeleaf, featuring a player vs AI mode where the opponent is the Google AI Gemini.
 
+[Live demo](https://chess-game-cevl.onrender.com/)
+
 ## Technologies Used
 
 - **Backend**: Java, Spring Boot
