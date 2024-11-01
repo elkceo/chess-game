@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Chess Home</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+    <link rel="stylesheet" th:href="@{/css/home.css}">
+
+</head>
+<body>
+<div class="container">
+    <div class="home-content">
+        <h1>Welcome to Chess</h1>
+        <h4>Are you ready to fight with Google's AI?</h4>
+        <p>Choose your side</p>
+        <form method="post" th:action="@{/game/start}">
+            <div class="select-side">
+                <label>
+                    <input name="side" required type="radio" value="white">
+                    <span>♙</span>
+                </label>
+                <label class="random">
+                    <input checked name="side" type="radio" value="random">
+                    <span><span class="cubic">🎲</span></span>
+                </label>
+                <label>
+                    <input name="side" type="radio" value="black">
+                    <span>♟</span>
+                </label>
+            </div>
+            <button type="submit">Start New Game</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

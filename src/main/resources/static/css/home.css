@@ -1,0 +1,48 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+form input[type="radio"] {
+    display: none;
+}
+
+form label {
+    font-size: 6em;
+    cursor: pointer;
+    &.random{
+        font-size: 2em;
+    }
+}
+
+.cubic {
+    animation: spin 4s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
+    display: inline-block;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+span {
+    padding: 5px;
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+form input[type="radio"]:checked+span {
+    border-radius: 5px;
+    box-shadow: 0 0 5px #666;
+}
+
+.select-side{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
